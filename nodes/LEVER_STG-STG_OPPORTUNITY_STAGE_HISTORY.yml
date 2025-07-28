@@ -1,0 +1,98 @@
+fileVersion: 1
+id: 83c0468c-5c12-41d2-8b43-67e035f1a44c
+name: STG_OPPORTUNITY_STAGE_HISTORY
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: LEVER_STG
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: a4572d5a-e15b-4c4a-b3a6-bcbfb72a291b
+          stepCounter: 83c0468c-5c12-41d2-8b43-67e035f1a44c
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: OPPORTUNITY_ID
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 914e97a7-2ca4-494c-abf6-8c2d309da31c
+                stepCounter: b852631b-9375-46cf-ba27-a642812d38fa
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: a1baf800-9df6-41fa-8db4-4838885d0e42
+          stepCounter: 83c0468c-5c12-41d2-8b43-67e035f1a44c
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: STAGE_ID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 025e24d9-8717-48a9-85cf-289325e0a955
+                stepCounter: b852631b-9375-46cf-ba27-a642812d38fa
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 164cc46d-ac37-48bc-a93c-96c825f775f5
+          stepCounter: 83c0468c-5c12-41d2-8b43-67e035f1a44c
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: UPDATER_ID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 3160c71f-7325-4487-962e-e2785bc0c1dd
+                stepCounter: b852631b-9375-46cf-ba27-a642812d38fa
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7fbb92d0-25af-4fde-8251-d92b0433628c
+          stepCounter: 83c0468c-5c12-41d2-8b43-67e035f1a44c
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: TO_STAGE_INDEX
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 0280952d-5f97-423f-9b39-94ebfb1e23d6
+                stepCounter: b852631b-9375-46cf-ba27-a642812d38fa
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases:
+          OPPORTUNITY_STAGE_HISTORY: b852631b-9375-46cf-ba27-a642812d38fa
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: LEVER_RAW
+            nodeName: OPPORTUNITY_STAGE_HISTORY
+        join:
+          joinCondition: |-
+            FROM {{ ref('LEVER_RAW', 'OPPORTUNITY_STAGE_HISTORY') }} "OPPORTUNITY_STAGE_HISTORY"
+            WHERE "_FIVETRAN_DELETED" = FALSE
+        name: STG_OPPORTUNITY_STAGE_HISTORY
+        noLinkRefs: []
+  name: STG_OPPORTUNITY_STAGE_HISTORY
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node

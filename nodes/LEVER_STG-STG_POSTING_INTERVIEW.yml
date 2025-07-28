@@ -1,0 +1,70 @@
+fileVersion: 1
+id: b2bc27c4-f618-4c54-9f2b-ff0ac9b1eca2
+name: STG_POSTING_INTERVIEW
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: LEVER_STG
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: e127d824-3d72-446f-bcb8-b31522fc10d6
+          stepCounter: b2bc27c4-f618-4c54-9f2b-ff0ac9b1eca2
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: INTERVIEW_ID
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 29414b36-6a90-43f7-889c-c30f57b4d222
+                stepCounter: 3f6ec006-bf90-4ed2-944e-ad580924c9dc
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: a590de3c-cd58-48fb-82e3-7f030fadb244
+          stepCounter: b2bc27c4-f618-4c54-9f2b-ff0ac9b1eca2
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: POSTING_ID
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 1e13ec03-816b-4069-b2c4-39430bd7d742
+                stepCounter: 3f6ec006-bf90-4ed2-944e-ad580924c9dc
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases:
+          POSTING_INTERVIEW: 3f6ec006-bf90-4ed2-944e-ad580924c9dc
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: LEVER_RAW
+            nodeName: POSTING_INTERVIEW
+        join:
+          joinCondition: |-
+            FROM {{ ref('LEVER_RAW', 'POSTING_INTERVIEW') }} "POSTING_INTERVIEW"
+            WHERE "_FIVETRAN_DELETED"= FALSE
+        name: STG_POSTING_INTERVIEW
+        noLinkRefs: []
+  name: STG_POSTING_INTERVIEW
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node

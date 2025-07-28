@@ -1,0 +1,92 @@
+fileVersion: 1
+id: 5845707a-dce9-4263-a1e8-5192cb0f2cfd
+name: CONTACT_EMAIL
+operation:
+  database: ""
+  deployEnabled: true
+  description: ""
+  locationName: LEVER_RAW
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: a9b8085c-f66c-499d-ba81-6e1eadbbebf7
+          stepCounter: 5845707a-dce9-4263-a1e8-5192cb0f2cfd
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        name: CONTACT_ID
+        nullable: false
+        primaryKey: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 17795e68-ba73-4692-835f-d62ee4215f61
+          stepCounter: 5845707a-dce9-4263-a1e8-5192cb0f2cfd
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        name: EMAIL
+        nullable: false
+        primaryKey: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 905222e5-6317-4429-90e7-7abdd4cb4852
+          stepCounter: 5845707a-dce9-4263-a1e8-5192cb0f2cfd
+        config: {}
+        dataType: BOOLEAN
+        defaultValue: ""
+        description: ""
+        name: _FIVETRAN_DELETED
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 772068f3-a3c3-46f7-9ed7-ce57900cb1bf
+          stepCounter: 5845707a-dce9-4263-a1e8-5192cb0f2cfd
+        config: {}
+        dataType: TIMESTAMP_TZ(9)
+        defaultValue: ""
+        description: ""
+        name: _FIVETRAN_SYNCED
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+  name: CONTACT_EMAIL
+  schema: ""
+  sqlType: Source
+  type: sourceInput
+  version: 1
+type: Node

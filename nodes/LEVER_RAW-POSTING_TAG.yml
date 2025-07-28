@@ -1,0 +1,92 @@
+fileVersion: 1
+id: b2630568-c43d-4d0c-a8da-65ca34962e89
+name: POSTING_TAG
+operation:
+  database: ""
+  deployEnabled: true
+  description: ""
+  locationName: LEVER_RAW
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4094aec6-3745-4c08-a702-52fc59418b5f
+          stepCounter: b2630568-c43d-4d0c-a8da-65ca34962e89
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        name: POSTING_ID
+        nullable: false
+        primaryKey: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: ae14a771-522b-4ae0-aa94-862e0b7d8548
+          stepCounter: b2630568-c43d-4d0c-a8da-65ca34962e89
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        name: TAGS
+        nullable: false
+        primaryKey: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 77341606-3013-4303-8749-88dd45b64cfc
+          stepCounter: b2630568-c43d-4d0c-a8da-65ca34962e89
+        config: {}
+        dataType: BOOLEAN
+        defaultValue: ""
+        description: ""
+        name: _FIVETRAN_DELETED
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5d6840ce-74d4-4940-b9c2-fc5c1f6da3f0
+          stepCounter: b2630568-c43d-4d0c-a8da-65ca34962e89
+        config: {}
+        dataType: TIMESTAMP_TZ(9)
+        defaultValue: ""
+        description: ""
+        name: _FIVETRAN_SYNCED
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+  name: POSTING_TAG
+  schema: ""
+  sqlType: Source
+  type: sourceInput
+  version: 1
+type: Node

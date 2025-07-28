@@ -1,0 +1,130 @@
+fileVersion: 1
+id: 7345c4cf-db09-4c5c-8049-61bb2d684825
+name: POSTING_CONTENT_LIST
+operation:
+  database: ""
+  deployEnabled: true
+  description: ""
+  locationName: LEVER_RAW
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 639ee98e-910e-4be4-b1f7-bc86204eb10c
+          stepCounter: 7345c4cf-db09-4c5c-8049-61bb2d684825
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        name: POSTING_ID
+        nullable: false
+        primaryKey: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 17816e60-9a43-4f08-9f15-8da688785e52
+          stepCounter: 7345c4cf-db09-4c5c-8049-61bb2d684825
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: INDEX
+        nullable: false
+        primaryKey: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: e220f0d1-583e-43d6-acda-1acc6eabcbec
+          stepCounter: 7345c4cf-db09-4c5c-8049-61bb2d684825
+        config: {}
+        dataType: BOOLEAN
+        defaultValue: ""
+        description: ""
+        name: _FIVETRAN_DELETED
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 64c061a3-ebd8-4570-adbe-db785c44d6ff
+          stepCounter: 7345c4cf-db09-4c5c-8049-61bb2d684825
+        config: {}
+        dataType: TIMESTAMP_TZ(9)
+        defaultValue: ""
+        description: ""
+        name: _FIVETRAN_SYNCED
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 887211f7-0af4-4e03-a345-6d25ed8a6cf8
+          stepCounter: 7345c4cf-db09-4c5c-8049-61bb2d684825
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        name: TEXT
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: c0e6aee3-3a0c-4171-97bb-a624a7d5c9b4
+          stepCounter: 7345c4cf-db09-4c5c-8049-61bb2d684825
+        config: {}
+        dataType: VARCHAR(4096)
+        defaultValue: ""
+        description: ""
+        name: CONTENT
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+  name: POSTING_CONTENT_LIST
+  schema: ""
+  sqlType: Source
+  type: sourceInput
+  version: 1
+type: Node

@@ -1,0 +1,126 @@
+fileVersion: 1
+id: 919be570-94f7-48f8-8fa4-6bab35a4440e
+name: STG_CONTACT
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: LEVER_STG
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9757c09a-8b2c-4d9a-9aef-b6d8b6dd3192
+          stepCounter: 919be570-94f7-48f8-8fa4-6bab35a4440e
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: ID
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c5fb6dcc-f46f-42a4-9d75-d020a3910c72
+                stepCounter: 25eaf79d-dbf7-4cc0-b2bb-240389a17c83
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5f8bd154-3a94-4489-af10-46135fca0d3a
+          stepCounter: 919be570-94f7-48f8-8fa4-6bab35a4440e
+        config: {}
+        dataType: BOOLEAN
+        description: ""
+        name: _FIVETRAN_DELETED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b7d87d81-a6bc-4e23-a1c0-f4c19e8fca1d
+                stepCounter: 25eaf79d-dbf7-4cc0-b2bb-240389a17c83
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: d0b6698e-4658-4b23-a2dc-b7bcc530d1ef
+          stepCounter: 919be570-94f7-48f8-8fa4-6bab35a4440e
+        config: {}
+        dataType: TIMESTAMP_TZ(9)
+        description: ""
+        name: _FIVETRAN_SYNCED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 720f379c-48a0-4c0e-902a-05c541dd69c9
+                stepCounter: 25eaf79d-dbf7-4cc0-b2bb-240389a17c83
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1331d204-800d-41be-837b-e5f771693ed2
+          stepCounter: 919be570-94f7-48f8-8fa4-6bab35a4440e
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: NAME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 7444ba67-4871-42d3-b7c1-7ee101c84d82
+                stepCounter: 25eaf79d-dbf7-4cc0-b2bb-240389a17c83
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 560e5f03-8b74-4b59-98f6-1a1304e4eaa7
+          stepCounter: 919be570-94f7-48f8-8fa4-6bab35a4440e
+        config: {}
+        dataType: VARCHAR
+        description: ""
+        name: LOCATION
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 8563bc95-a16d-488b-befa-0d8ba068727c
+                stepCounter: 25eaf79d-dbf7-4cc0-b2bb-240389a17c83
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5dfa1c8d-27ba-4654-bbbd-5650a49858ab
+          stepCounter: 919be570-94f7-48f8-8fa4-6bab35a4440e
+        config: {}
+        dataType: VARCHAR(512)
+        description: ""
+        name: HEADLINE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 5573b1db-ec8c-4cde-90e9-049c75dfbe5f
+                stepCounter: 25eaf79d-dbf7-4cc0-b2bb-240389a17c83
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases:
+          CONTACT: 25eaf79d-dbf7-4cc0-b2bb-240389a17c83
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: LEVER_RAW
+            nodeName: CONTACT
+        join:
+          joinCondition: |-
+            FROM {{ ref('LEVER_RAW', 'CONTACT') }} "CONTACT"
+            WHERE "_FIVETRAN_DELETED" = FALSE
+        name: STG_CONTACT
+        noLinkRefs: []
+  name: STG_CONTACT
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node

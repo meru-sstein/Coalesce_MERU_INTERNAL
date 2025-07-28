@@ -1,0 +1,92 @@
+fileVersion: 1
+id: 86bf6230-6dc2-4778-9717-7dcf9ab448af
+name: INTERVIEW_FEEDBACK
+operation:
+  database: ""
+  deployEnabled: true
+  description: ""
+  locationName: LEVER_RAW
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 69408eef-61d1-4069-8df0-869395f99297
+          stepCounter: 86bf6230-6dc2-4778-9717-7dcf9ab448af
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        name: INTERVIEW_ID
+        nullable: false
+        primaryKey: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6dde350f-1a21-4544-a992-b262e7ce97b2
+          stepCounter: 86bf6230-6dc2-4778-9717-7dcf9ab448af
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        name: FEEDBACK_FORM_ID
+        nullable: false
+        primaryKey: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5a65482d-2594-46da-8209-cbaea960a23d
+          stepCounter: 86bf6230-6dc2-4778-9717-7dcf9ab448af
+        config: {}
+        dataType: BOOLEAN
+        defaultValue: ""
+        description: ""
+        name: _FIVETRAN_DELETED
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: cc33bd00-12a4-4038-929b-52997d14d448
+          stepCounter: 86bf6230-6dc2-4778-9717-7dcf9ab448af
+        config: {}
+        dataType: TIMESTAMP_TZ(9)
+        defaultValue: ""
+        description: ""
+        name: _FIVETRAN_SYNCED
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+  name: INTERVIEW_FEEDBACK
+  schema: ""
+  sqlType: Source
+  type: sourceInput
+  version: 1
+type: Node

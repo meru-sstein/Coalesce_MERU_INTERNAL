@@ -1,0 +1,182 @@
+fileVersion: 1
+id: 82837322-9782-4c86-9661-0f0cd878b8e0
+name: STG_OPPORTUNITY_POSITION
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: LEVER_STG
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: a47284c2-8c61-4a83-a379-c3bd8d2c76c9
+          stepCounter: 82837322-9782-4c86-9661-0f0cd878b8e0
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: RESUME_ID
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b5c65306-01f3-4cc7-be8a-0c37e51666b1
+                stepCounter: a9ab0645-b1e7-4c2f-9d50-cbaa7121c618
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 851309da-317a-4846-9a4f-e38b5fc99cf7
+          stepCounter: 82837322-9782-4c86-9661-0f0cd878b8e0
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: INDEX
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 1eecf846-483e-4326-8ca1-9b03e4b76de7
+                stepCounter: a9ab0645-b1e7-4c2f-9d50-cbaa7121c618
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 96a97dee-3db9-4f20-a4a9-f7cea92d066d
+          stepCounter: 82837322-9782-4c86-9661-0f0cd878b8e0
+        config: {}
+        dataType: VARCHAR(16384)
+        description: ""
+        name: SUMMARY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 48ca8d56-5cfc-4b3b-8a22-329a382aa129
+                stepCounter: a9ab0645-b1e7-4c2f-9d50-cbaa7121c618
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: a9015269-e912-4e4c-97e9-eea2a5d55a22
+          stepCounter: 82837322-9782-4c86-9661-0f0cd878b8e0
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: ORG
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 3e440642-a4d5-4166-bdbb-f1005b9d925f
+                stepCounter: a9ab0645-b1e7-4c2f-9d50-cbaa7121c618
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: bb4be4e5-b447-4aed-a2f2-e46cf199184d
+          stepCounter: 82837322-9782-4c86-9661-0f0cd878b8e0
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: START_YEAR
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 6c7fa0eb-0ea2-4f47-bfbc-c0f4cef50d5e
+                stepCounter: a9ab0645-b1e7-4c2f-9d50-cbaa7121c618
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 77d0be9b-e35d-46ff-a54a-7c5718460e35
+          stepCounter: 82837322-9782-4c86-9661-0f0cd878b8e0
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: START_MONTH
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 133b97f7-e40b-4cd0-a2ed-fbc140c520ac
+                stepCounter: a9ab0645-b1e7-4c2f-9d50-cbaa7121c618
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: a69a9715-19d3-47be-a44c-e6a25b0182a5
+          stepCounter: 82837322-9782-4c86-9661-0f0cd878b8e0
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: END_MONTH
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 7a4b67a5-b236-43a1-9a48-9b48bb137add
+                stepCounter: a9ab0645-b1e7-4c2f-9d50-cbaa7121c618
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ac3c772f-813f-4454-a9b5-dbe900202804
+          stepCounter: 82837322-9782-4c86-9661-0f0cd878b8e0
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: TITLE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 53c3e667-be22-4b32-a2f9-68bbdc3506a3
+                stepCounter: a9ab0645-b1e7-4c2f-9d50-cbaa7121c618
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: bfeeab4c-63a3-4f66-8be0-0978aea0d047
+          stepCounter: 82837322-9782-4c86-9661-0f0cd878b8e0
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: END_YEAR
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: d2c6fffc-2b8a-4b3b-9c57-df4bddaafa2b
+                stepCounter: a9ab0645-b1e7-4c2f-9d50-cbaa7121c618
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 13bf7d63-dabe-4402-9f53-a56e4b3da93c
+          stepCounter: 82837322-9782-4c86-9661-0f0cd878b8e0
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: LOCATION
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 0b1de0ac-2b93-4007-b4ed-e1e6758b951c
+                stepCounter: a9ab0645-b1e7-4c2f-9d50-cbaa7121c618
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases:
+          OPPORTUNITY_POSITION: a9ab0645-b1e7-4c2f-9d50-cbaa7121c618
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: LEVER_RAW
+            nodeName: OPPORTUNITY_POSITION
+        join:
+          joinCondition: |-
+            FROM {{ ref('LEVER_RAW', 'OPPORTUNITY_POSITION') }} "OPPORTUNITY_POSITION"
+            WHERE "_FIVETRAN_DELETED"= FALSE
+        name: STG_OPPORTUNITY_POSITION
+        noLinkRefs: []
+  name: STG_OPPORTUNITY_POSITION
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node

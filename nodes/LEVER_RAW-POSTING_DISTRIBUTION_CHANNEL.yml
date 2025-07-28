@@ -1,0 +1,92 @@
+fileVersion: 1
+id: c6072aed-ca26-441f-99af-f5480f391f2f
+name: POSTING_DISTRIBUTION_CHANNEL
+operation:
+  database: ""
+  deployEnabled: true
+  description: ""
+  locationName: LEVER_RAW
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9344a133-c3dd-4e51-ab9b-a961e1a70ae9
+          stepCounter: c6072aed-ca26-441f-99af-f5480f391f2f
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        name: POSTING_ID
+        nullable: false
+        primaryKey: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 697fde23-b306-4098-bdc3-eb5f37d952e4
+          stepCounter: c6072aed-ca26-441f-99af-f5480f391f2f
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        name: DISTRIBUTION_CHANNEL
+        nullable: false
+        primaryKey: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 11cee2e3-6a13-4641-9c56-95bd4a0aae11
+          stepCounter: c6072aed-ca26-441f-99af-f5480f391f2f
+        config: {}
+        dataType: BOOLEAN
+        defaultValue: ""
+        description: ""
+        name: _FIVETRAN_DELETED
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4ef81c07-a9da-40df-a497-4e6ebd0bb182
+          stepCounter: c6072aed-ca26-441f-99af-f5480f391f2f
+        config: {}
+        dataType: TIMESTAMP_TZ(9)
+        defaultValue: ""
+        description: ""
+        name: _FIVETRAN_SYNCED
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+  name: POSTING_DISTRIBUTION_CHANNEL
+  schema: ""
+  sqlType: Source
+  type: sourceInput
+  version: 1
+type: Node

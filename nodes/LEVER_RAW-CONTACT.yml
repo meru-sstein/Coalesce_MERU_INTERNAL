@@ -1,0 +1,130 @@
+fileVersion: 1
+id: 25eaf79d-dbf7-4cc0-b2bb-240389a17c83
+name: CONTACT
+operation:
+  database: ""
+  deployEnabled: true
+  description: ""
+  locationName: LEVER_RAW
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: c5fb6dcc-f46f-42a4-9d75-d020a3910c72
+          stepCounter: 25eaf79d-dbf7-4cc0-b2bb-240389a17c83
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        name: ID
+        nullable: false
+        primaryKey: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: b7d87d81-a6bc-4e23-a1c0-f4c19e8fca1d
+          stepCounter: 25eaf79d-dbf7-4cc0-b2bb-240389a17c83
+        config: {}
+        dataType: BOOLEAN
+        defaultValue: ""
+        description: ""
+        name: _FIVETRAN_DELETED
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 720f379c-48a0-4c0e-902a-05c541dd69c9
+          stepCounter: 25eaf79d-dbf7-4cc0-b2bb-240389a17c83
+        config: {}
+        dataType: TIMESTAMP_TZ(9)
+        defaultValue: ""
+        description: ""
+        name: _FIVETRAN_SYNCED
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7444ba67-4871-42d3-b7c1-7ee101c84d82
+          stepCounter: 25eaf79d-dbf7-4cc0-b2bb-240389a17c83
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        name: NAME
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8563bc95-a16d-488b-befa-0d8ba068727c
+          stepCounter: 25eaf79d-dbf7-4cc0-b2bb-240389a17c83
+        config: {}
+        dataType: VARIANT
+        defaultValue: ""
+        description: ""
+        name: LOCATION
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5573b1db-ec8c-4cde-90e9-049c75dfbe5f
+          stepCounter: 25eaf79d-dbf7-4cc0-b2bb-240389a17c83
+        config: {}
+        dataType: VARCHAR(512)
+        defaultValue: ""
+        description: ""
+        name: HEADLINE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+  name: CONTACT
+  schema: ""
+  sqlType: Source
+  type: sourceInput
+  version: 1
+type: Node

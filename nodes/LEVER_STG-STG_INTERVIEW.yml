@@ -1,0 +1,210 @@
+fileVersion: 1
+id: 82651f5f-4c2d-4c36-8fb2-a34867837f5f
+name: STG_INTERVIEW
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: LEVER_STG
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 409f43fd-57a1-43d9-86cc-28ddb64296ed
+          stepCounter: 82651f5f-4c2d-4c36-8fb2-a34867837f5f
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: ID
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f70f596d-d20f-47bb-9837-30413d7bfe6f
+                stepCounter: 099ccd35-8d72-435f-a765-254dfd4b208e
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 070923e2-4b33-4769-8ff0-832d3d49a0fd
+          stepCounter: 82651f5f-4c2d-4c36-8fb2-a34867837f5f
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: CREATOR_ID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ccd7ae32-9952-4f94-bf2a-f21981ae90bd
+                stepCounter: 099ccd35-8d72-435f-a765-254dfd4b208e
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 522d851a-2dc6-46ad-bc97-60997eeb84aa
+          stepCounter: 82651f5f-4c2d-4c36-8fb2-a34867837f5f
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: OPPORTUNITY_ID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 68ffda65-1151-429b-86bc-b3f0fab33698
+                stepCounter: 099ccd35-8d72-435f-a765-254dfd4b208e
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c2f93556-98ac-48ea-ac27-3eee537e7a38
+          stepCounter: 82651f5f-4c2d-4c36-8fb2-a34867837f5f
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: STAGE_ID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: da287cc5-58bd-4107-8e81-aaf66846c19d
+                stepCounter: 099ccd35-8d72-435f-a765-254dfd4b208e
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: fe9a92a6-2b92-43f1-8b3d-92b717b8b466
+          stepCounter: 82651f5f-4c2d-4c36-8fb2-a34867837f5f
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: PANEL_ID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a47d9850-8281-43a8-8594-39046c170935
+                stepCounter: 099ccd35-8d72-435f-a765-254dfd4b208e
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 765b13d5-e1c5-40ec-b974-216ec980357b
+          stepCounter: 82651f5f-4c2d-4c36-8fb2-a34867837f5f
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: TIMEZONE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 0a4a78ed-5d0f-4fe2-9f14-c21e58ac7186
+                stepCounter: 099ccd35-8d72-435f-a765-254dfd4b208e
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6e156232-47bb-4917-a086-651b508dfc42
+          stepCounter: 82651f5f-4c2d-4c36-8fb2-a34867837f5f
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: SUBJECT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 95ac1c7c-7fd9-4be8-9b7b-5b6112c55370
+                stepCounter: 099ccd35-8d72-435f-a765-254dfd4b208e
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: e4fb7679-59d9-4042-a2a2-037f8308ad1f
+          stepCounter: 82651f5f-4c2d-4c36-8fb2-a34867837f5f
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: FEEDBACK_REMINDER
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f3965f95-9777-4332-906d-c40d2a34fa41
+                stepCounter: 099ccd35-8d72-435f-a765-254dfd4b208e
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b95e1e0a-19db-4d8c-bf36-3bae59c2b379
+          stepCounter: 82651f5f-4c2d-4c36-8fb2-a34867837f5f
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: DURATION
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: fda2c641-d1de-4070-9640-33f0bffcedc1
+                stepCounter: 099ccd35-8d72-435f-a765-254dfd4b208e
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9d9b942d-53ac-46e5-8bac-8e6497667f3a
+          stepCounter: 82651f5f-4c2d-4c36-8fb2-a34867837f5f
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: LOCATION
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: d4b7262c-4660-409a-9e37-b3030a7ef625
+                stepCounter: 099ccd35-8d72-435f-a765-254dfd4b208e
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9c1fd0b8-c1b3-472f-9e89-64283bbed2b4
+          stepCounter: 82651f5f-4c2d-4c36-8fb2-a34867837f5f
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: NOTE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 3c332e73-07bb-4823-8cb1-86823a95155d
+                stepCounter: 099ccd35-8d72-435f-a765-254dfd4b208e
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ffb1fa6c-3080-4fba-8fa5-37089e52fc48
+          stepCounter: 82651f5f-4c2d-4c36-8fb2-a34867837f5f
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: GCAL_EVENT_URL
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 73cdd8af-79bd-4d34-9503-17e759360c30
+                stepCounter: 099ccd35-8d72-435f-a765-254dfd4b208e
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases:
+          INTERVIEW: 099ccd35-8d72-435f-a765-254dfd4b208e
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: LEVER_RAW
+            nodeName: INTERVIEW
+        join:
+          joinCondition: |-
+            FROM {{ ref('LEVER_RAW', 'INTERVIEW') }} "INTERVIEW"
+            WHERE "_FIVETRAN_DELETED" = FALSE
+        name: STG_INTERVIEW
+        noLinkRefs: []
+  name: STG_INTERVIEW
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node

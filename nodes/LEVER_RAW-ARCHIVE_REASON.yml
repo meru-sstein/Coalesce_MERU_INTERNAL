@@ -1,0 +1,92 @@
+fileVersion: 1
+id: 8bd3994f-74ca-4206-8aa3-e9db3b32bc40
+name: ARCHIVE_REASON
+operation:
+  database: ""
+  deployEnabled: true
+  description: ""
+  locationName: LEVER_RAW
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8d4d23e2-e878-4ea5-b83f-0c10d425c9a7
+          stepCounter: 8bd3994f-74ca-4206-8aa3-e9db3b32bc40
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        name: ID
+        nullable: false
+        primaryKey: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5fb9bf33-a417-495d-b033-c1e65f53acfc
+          stepCounter: 8bd3994f-74ca-4206-8aa3-e9db3b32bc40
+        config: {}
+        dataType: BOOLEAN
+        defaultValue: ""
+        description: ""
+        name: _FIVETRAN_DELETED
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 48cc8496-dc1a-46f0-8a4e-4f82c1aa35a3
+          stepCounter: 8bd3994f-74ca-4206-8aa3-e9db3b32bc40
+        config: {}
+        dataType: TIMESTAMP_TZ(9)
+        defaultValue: ""
+        description: ""
+        name: _FIVETRAN_SYNCED
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: cb71c6b7-f334-4e45-b829-c644f683663c
+          stepCounter: 8bd3994f-74ca-4206-8aa3-e9db3b32bc40
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        name: TEXT
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+  name: ARCHIVE_REASON
+  schema: ""
+  sqlType: Source
+  type: sourceInput
+  version: 1
+type: Node
