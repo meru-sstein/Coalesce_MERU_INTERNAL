@@ -1,0 +1,8 @@
+defaultStorageMapping: null
+fileVersion: 1
+locations:
+  - DIM_PREPARED
+  - LEVER_PREPARED
+  - LEVER_RAW
+  - LEVER_STG
+  - RECRUITMENT_PREPARED
