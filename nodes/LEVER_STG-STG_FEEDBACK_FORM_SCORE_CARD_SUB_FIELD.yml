@@ -1,0 +1,112 @@
+fileVersion: 1
+id: f66f7109-126c-436b-a581-bbc773bfa26b
+name: STG_FEEDBACK_FORM_SCORE_CARD_SUB_FIELD
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: LEVER_STG
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0a4dcb63-5fc5-41fc-bf9c-3a75cbcc2ba7
+          stepCounter: f66f7109-126c-436b-a581-bbc773bfa26b
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: FIELD_INDEX
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 4071d266-3647-4faf-802f-248a62fd2803
+                stepCounter: 67e1ca9e-599d-43a6-b34c-294dbfa08c38
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b777a369-a6ba-4c1d-9d4e-8e6445f3b703
+          stepCounter: f66f7109-126c-436b-a581-bbc773bfa26b
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: ID
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: e78d0181-12f5-4399-b1b0-82537c2655e1
+                stepCounter: 67e1ca9e-599d-43a6-b34c-294dbfa08c38
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: a99a3b52-7a1b-485b-8caa-30000b5dba56
+          stepCounter: f66f7109-126c-436b-a581-bbc773bfa26b
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: SUB_FIELD_INDEX
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 8ba8cf85-7c26-454e-b295-6155ee695d75
+                stepCounter: 67e1ca9e-599d-43a6-b34c-294dbfa08c38
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: f17b23c5-8669-4d84-a570-47719a61dc43
+          stepCounter: f66f7109-126c-436b-a581-bbc773bfa26b
+        config: {}
+        dataType: VARCHAR(512)
+        description: ""
+        name: DESCRIPTION
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 557c7597-28e3-49ef-aae6-bda131fdd029
+                stepCounter: 67e1ca9e-599d-43a6-b34c-294dbfa08c38
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: a6c8e889-b5ba-4d29-a973-ab8d6edb2559
+          stepCounter: f66f7109-126c-436b-a581-bbc773bfa26b
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: TEXT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 2b470819-b5ff-4797-8f45-48a24419de3e
+                stepCounter: 67e1ca9e-599d-43a6-b34c-294dbfa08c38
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases:
+          FEEDBACK_FORM_SCORE_CARD_SUB_FIELD: 67e1ca9e-599d-43a6-b34c-294dbfa08c38
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: LEVER_RAW
+            nodeName: FEEDBACK_FORM_SCORE_CARD_SUB_FIELD
+        join:
+          joinCondition: |-
+            FROM {{ ref('LEVER_RAW', 'FEEDBACK_FORM_SCORE_CARD_SUB_FIELD') }} "FEEDBACK_FORM_SCORE_CARD_SUB_FIELD"
+            WHERE "_FIVETRAN_DELETED"= FALSE
+        name: STG_FEEDBACK_FORM_SCORE_CARD_SUB_FIELD
+        noLinkRefs: []
+  name: STG_FEEDBACK_FORM_SCORE_CARD_SUB_FIELD
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node

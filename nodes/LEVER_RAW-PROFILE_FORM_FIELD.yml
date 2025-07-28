@@ -1,0 +1,168 @@
+fileVersion: 1
+id: 4665e847-98bc-408e-a97e-0d37fedb86ba
+name: PROFILE_FORM_FIELD
+operation:
+  database: ""
+  deployEnabled: true
+  description: ""
+  locationName: LEVER_RAW
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: e79fa3f5-e8be-4eaa-91d5-189a4c616e15
+          stepCounter: 4665e847-98bc-408e-a97e-0d37fedb86ba
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        name: PROFILE_FORM_ID
+        nullable: false
+        primaryKey: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: d3b957b7-e8b8-4a65-97b3-443044335107
+          stepCounter: 4665e847-98bc-408e-a97e-0d37fedb86ba
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: FIELD_INDEX
+        nullable: false
+        primaryKey: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 262459b5-3dac-4b0d-8c63-c567d9d0569d
+          stepCounter: 4665e847-98bc-408e-a97e-0d37fedb86ba
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: VALUE_INDEX
+        nullable: false
+        primaryKey: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: f5a39aac-c340-46b8-ad1e-fa45aa5419bb
+          stepCounter: 4665e847-98bc-408e-a97e-0d37fedb86ba
+        config: {}
+        dataType: BOOLEAN
+        defaultValue: ""
+        description: ""
+        name: _FIVETRAN_DELETED
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: dbce5631-8159-4329-b241-0f79b33a9ae5
+          stepCounter: 4665e847-98bc-408e-a97e-0d37fedb86ba
+        config: {}
+        dataType: TIMESTAMP_TZ(9)
+        defaultValue: ""
+        description: ""
+        name: _FIVETRAN_SYNCED
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 75bb8968-e256-4f12-b421-924501feed31
+          stepCounter: 4665e847-98bc-408e-a97e-0d37fedb86ba
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        name: VALUE_TEXT
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7a56eda0-4964-4415-ae85-123cf167512c
+          stepCounter: 4665e847-98bc-408e-a97e-0d37fedb86ba
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        name: TYPE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: d0f8197f-ea3c-45ba-85ba-ff8ea38c7b3e
+          stepCounter: 4665e847-98bc-408e-a97e-0d37fedb86ba
+        config: {}
+        dataType: TIMESTAMP_TZ(9)
+        defaultValue: ""
+        description: ""
+        name: VALUE_DATE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+  name: PROFILE_FORM_FIELD
+  schema: ""
+  sqlType: Source
+  type: sourceInput
+  version: 1
+type: Node

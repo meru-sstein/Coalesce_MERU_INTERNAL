@@ -1,0 +1,213 @@
+fileVersion: 1
+id: 009e984e-4798-4bc8-89c4-90fc40781c2f
+name: STG_FEEDBACK_FORM
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: LEVER_STG
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: d4da2a1f-76fb-4e0a-b5a3-89a82cfbc235
+          stepCounter: 009e984e-4798-4bc8-89c4-90fc40781c2f
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: ID
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: aa55e224-512f-40a4-a37a-d233dbf15215
+                stepCounter: 2d73fd66-2e8d-4c54-bdac-517d18233656
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1651f29d-5a5e-479e-8562-6dc77e251145
+          stepCounter: 009e984e-4798-4bc8-89c4-90fc40781c2f
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: CREATOR_ID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 13c9cd96-e0ae-4a09-a160-d484fe970941
+                stepCounter: 2d73fd66-2e8d-4c54-bdac-517d18233656
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 693d3d20-ce9e-4602-a036-6f95adaf545a
+          stepCounter: 009e984e-4798-4bc8-89c4-90fc40781c2f
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: INTERVIEW_ID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: daa033c0-3148-4aa8-81a7-bd99d00f0031
+                stepCounter: 2d73fd66-2e8d-4c54-bdac-517d18233656
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 55ea9493-44be-48d2-9d07-f5a51727e8f7
+          stepCounter: 009e984e-4798-4bc8-89c4-90fc40781c2f
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: OPPORTUNITY_ID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 754609d8-d543-48b4-999f-36b2a91d08e0
+                stepCounter: 2d73fd66-2e8d-4c54-bdac-517d18233656
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 769fc701-4655-462a-98fe-51690e7486ce
+          stepCounter: 009e984e-4798-4bc8-89c4-90fc40781c2f
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: TEMPLATE_ID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f68aea97-b566-4120-adcd-25a751948a98
+                stepCounter: 2d73fd66-2e8d-4c54-bdac-517d18233656
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 01b2fc26-c654-4a29-abc3-c66452b01e7c
+          stepCounter: 009e984e-4798-4bc8-89c4-90fc40781c2f
+        config: {}
+        dataType: VARCHAR(2048)
+        description: ""
+        name: INSTRUCTIONS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 8a2e32c5-7168-4350-9658-96aa516e1103
+                stepCounter: 2d73fd66-2e8d-4c54-bdac-517d18233656
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9c5fc41d-89f1-4196-ac83-1c75a1b7d46a
+          stepCounter: 009e984e-4798-4bc8-89c4-90fc40781c2f
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: TYPE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ddf3bebc-fd20-4d56-99af-6d1644668ebc
+                stepCounter: 2d73fd66-2e8d-4c54-bdac-517d18233656
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5006d78d-4fac-4d7b-8e10-30c708b0afec
+          stepCounter: 009e984e-4798-4bc8-89c4-90fc40781c2f
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: TEXT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: d55086b5-3122-4c0c-9a2f-e6bd6e001e41
+                stepCounter: 2d73fd66-2e8d-4c54-bdac-517d18233656
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 67e8a7ad-c214-4177-87a8-d37af00923f3
+          stepCounter: 009e984e-4798-4bc8-89c4-90fc40781c2f
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: SCORE_SYSTEM_VALUE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 052c3457-23d6-4201-8308-c8d6abf87ed2
+                stepCounter: 2d73fd66-2e8d-4c54-bdac-517d18233656
+            transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: baae896f-7930-4431-a64f-d022790478bd
+          stepCounter: 009e984e-4798-4bc8-89c4-90fc40781c2f
+        config: {}
+        dataType: VARCHAR
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: FORM_INTERVIEW_TEXT_ID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: "0"
+                stepCounter: "0"
+            transform: |-
+              CASE 
+                  WHEN "FEEDBACK_FORM"."TEXT" LIKE '%#1%' OR 
+                  "FEEDBACK_FORM"."TEXT" LIKE '%Initial Conversation%'
+                  OR "FEEDBACK_FORM"."TEXT" LIKE '%Introductory Call%'
+                  THEN 'Interview #1 - Initial Conversation'
+              
+                  WHEN "FEEDBACK_FORM"."TEXT" LIKE '%#2%' OR 
+                  "FEEDBACK_FORM"."TEXT" LIKE '%Technical%'
+                  OR "FEEDBACK_FORM"."TEXT" LIKE '%Tehnical Interview%'
+                  THEN 'Interview #2- DI Technical Screen'
+              
+                  WHEN "FEEDBACK_FORM"."TEXT" LIKE '%#3%' OR 
+                  "FEEDBACK_FORM"."TEXT" LIKE '%Day in the Life%'
+                  OR "FEEDBACK_FORM"."TEXT" LIKE '%Passion Chat%'
+                  THEN 'Interview #3 - Day in the Life + Passion Chat'
+              
+                  WHEN "FEEDBACK_FORM"."TEXT" LIKE '%#4%' OR 
+                  "FEEDBACK_FORM"."TEXT" LIKE '%Live Case Study%'
+                  THEN 'Interview #4- DI Case Presentation'
+              
+                  WHEN "FEEDBACK_FORM"."TEXT" LIKE '%#5%' OR 
+                  "FEEDBACK_FORM"."TEXT" LIKE '%Case Study%'
+                  OR "FEEDBACK_FORM"."TEXT" LIKE '%Partner Interview%'
+                  THEN 'Interview #5 - Partner Interview'
+              END
+        systemColumnType: None
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases:
+          FEEDBACK_FORM: 2d73fd66-2e8d-4c54-bdac-517d18233656
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: LEVER_RAW
+            nodeName: FEEDBACK_FORM
+        join:
+          joinCondition: |-
+            FROM {{ ref('LEVER_RAW', 'FEEDBACK_FORM') }} "FEEDBACK_FORM"
+            WHERE "_FIVETRAN_DELETED" = FALSE
+        name: STG_FEEDBACK_FORM
+        noLinkRefs: []
+  name: STG_FEEDBACK_FORM
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node

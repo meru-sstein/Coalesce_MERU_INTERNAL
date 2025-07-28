@@ -1,0 +1,70 @@
+fileVersion: 1
+id: 009969a8-d30e-4361-9e89-7327c328b819
+name: STG_OPPORTUNITY_TAG
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: LEVER_STG
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 850fa704-1070-4ed0-8cb1-7e6545c525f7
+          stepCounter: 009969a8-d30e-4361-9e89-7327c328b819
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: OPPORTUNITY_ID
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 3ba4c7e5-a8f0-4785-9be9-c190dbbcc2b7
+                stepCounter: abfac655-76ae-4866-8eac-0f853fe1c8c0
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: f30f4f42-5ffb-4644-bfc7-12303daafe00
+          stepCounter: 009969a8-d30e-4361-9e89-7327c328b819
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: TAGS
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 941a5e07-3182-48d9-88e6-78e8923c4b05
+                stepCounter: abfac655-76ae-4866-8eac-0f853fe1c8c0
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases:
+          OPPORTUNITY_TAG: abfac655-76ae-4866-8eac-0f853fe1c8c0
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: LEVER_RAW
+            nodeName: OPPORTUNITY_TAG
+        join:
+          joinCondition: |-
+            FROM {{ ref('LEVER_RAW', 'OPPORTUNITY_TAG') }} "OPPORTUNITY_TAG"
+            WHERE "_FIVETRAN_DELETED"= FALSE
+        name: STG_OPPORTUNITY_TAG
+        noLinkRefs: []
+  name: STG_OPPORTUNITY_TAG
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node

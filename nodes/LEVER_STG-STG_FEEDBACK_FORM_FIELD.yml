@@ -1,0 +1,182 @@
+fileVersion: 1
+id: 85c845be-97f7-4d11-952f-12218285f572
+name: STG_FEEDBACK_FORM_FIELD
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: LEVER_STG
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b2bea618-f117-4958-8f44-ac4215c76271
+          stepCounter: 85c845be-97f7-4d11-952f-12218285f572
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: FEEDBACK_FORM_ID
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 2ee75771-0905-4b5a-9709-50f99fd642f5
+                stepCounter: 89721619-3e0d-4e0c-b703-1ce9df660752
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c14bdfbc-d0f9-491c-97d3-413c6ac66c46
+          stepCounter: 85c845be-97f7-4d11-952f-12218285f572
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: FIELD_INDEX
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: cf2f64b5-7cfe-40ce-8fdb-d7eae59629fe
+                stepCounter: 89721619-3e0d-4e0c-b703-1ce9df660752
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 12c355d2-a3bf-46a7-9e55-04e2c1658317
+          stepCounter: 85c845be-97f7-4d11-952f-12218285f572
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: VALUE_INDEX
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 521c1e28-5198-4aeb-b8f4-d27e579ecf97
+                stepCounter: 89721619-3e0d-4e0c-b703-1ce9df660752
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 46c24e6c-f8d2-4cd6-b781-fe90bf4eb7f2
+          stepCounter: 85c845be-97f7-4d11-952f-12218285f572
+        config: {}
+        dataType: VARCHAR(8192)
+        description: ""
+        name: VALUE_TEXT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 731488e9-96ec-429c-8d65-c3fad42ccfa1
+                stepCounter: 89721619-3e0d-4e0c-b703-1ce9df660752
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 64d52d8c-3763-48c7-af6e-de9b6fb80622
+          stepCounter: 85c845be-97f7-4d11-952f-12218285f572
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: VALUE_NUMBER
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 86be449a-3dd1-4b52-8d1e-ada28f8bdb8a
+                stepCounter: 89721619-3e0d-4e0c-b703-1ce9df660752
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: fb111f7a-6711-4479-a862-7988372e1694
+          stepCounter: 85c845be-97f7-4d11-952f-12218285f572
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: TYPE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f5c3f7f2-7397-4416-a570-62262a3efef9
+                stepCounter: 89721619-3e0d-4e0c-b703-1ce9df660752
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: dbcd5c0c-1030-4417-afb0-7249a9bce1f0
+          stepCounter: 85c845be-97f7-4d11-952f-12218285f572
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: CODE_LANGUAGE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 1076f06a-0499-4582-92d2-2e448f04d0a5
+                stepCounter: 89721619-3e0d-4e0c-b703-1ce9df660752
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 28401ac8-225e-47ea-a07a-9102350f3ede
+          stepCounter: 85c845be-97f7-4d11-952f-12218285f572
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: VALUE_FILE_ID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 8855a33f-5837-424e-acf9-2d2ec94c4140
+                stepCounter: 89721619-3e0d-4e0c-b703-1ce9df660752
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b3a4fb53-1903-4f7e-9472-ab36a6889b4f
+          stepCounter: 85c845be-97f7-4d11-952f-12218285f572
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: CURRENCY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 673e5d78-bb44-4816-960d-efcfaf9b7864
+                stepCounter: 89721619-3e0d-4e0c-b703-1ce9df660752
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: e9067f8a-93bf-4f17-80e4-7334f6dde1ee
+          stepCounter: 85c845be-97f7-4d11-952f-12218285f572
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: VALUE_DECIMAL
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c616f6ee-459f-49e3-b32e-15980e1a8c48
+                stepCounter: 89721619-3e0d-4e0c-b703-1ce9df660752
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases:
+          FEEDBACK_FORM_FIELD: 89721619-3e0d-4e0c-b703-1ce9df660752
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: LEVER_RAW
+            nodeName: FEEDBACK_FORM_FIELD
+        join:
+          joinCondition: |-
+            FROM {{ ref('LEVER_RAW', 'FEEDBACK_FORM_FIELD') }} "FEEDBACK_FORM_FIELD"
+            WHERE "_FIVETRAN_DELETED" = FALSE
+        name: STG_FEEDBACK_FORM_FIELD
+        noLinkRefs: []
+  name: STG_FEEDBACK_FORM_FIELD
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node

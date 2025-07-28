@@ -1,0 +1,92 @@
+fileVersion: 1
+id: 75d09afb-de41-476e-aa19-8258baffaaa0
+name: PANEL_APPLICATION
+operation:
+  database: ""
+  deployEnabled: true
+  description: ""
+  locationName: LEVER_RAW
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: f36fefb3-f6cf-46a5-8945-ea2ff4f2c275
+          stepCounter: 75d09afb-de41-476e-aa19-8258baffaaa0
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        name: PANEL_ID
+        nullable: false
+        primaryKey: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: cfa6ca25-4e35-4c4c-ab96-b8d0bf2274e1
+          stepCounter: 75d09afb-de41-476e-aa19-8258baffaaa0
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        name: APPLICATION_ID
+        nullable: false
+        primaryKey: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: c7f2ce8a-4b6f-428e-a06c-4d9bcf642b4e
+          stepCounter: 75d09afb-de41-476e-aa19-8258baffaaa0
+        config: {}
+        dataType: BOOLEAN
+        defaultValue: ""
+        description: ""
+        name: _FIVETRAN_DELETED
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: e94ec232-e571-4080-bd3d-0b20577284d7
+          stepCounter: 75d09afb-de41-476e-aa19-8258baffaaa0
+        config: {}
+        dataType: TIMESTAMP_TZ(9)
+        defaultValue: ""
+        description: ""
+        name: _FIVETRAN_SYNCED
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+  name: PANEL_APPLICATION
+  schema: ""
+  sqlType: Source
+  type: sourceInput
+  version: 1
+type: Node

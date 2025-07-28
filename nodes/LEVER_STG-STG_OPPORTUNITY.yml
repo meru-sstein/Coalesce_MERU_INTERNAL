@@ -1,0 +1,210 @@
+fileVersion: 1
+id: d9433584-194f-46d6-9fdd-592c10d5916c
+name: STG_OPPORTUNITY
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: LEVER_STG
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6ee7aed9-422d-44c0-a937-d0ae9306737e
+          stepCounter: d9433584-194f-46d6-9fdd-592c10d5916c
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: ID
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 4315e66b-be30-4d44-b4a5-2a8dc58669a9
+                stepCounter: 8b8550e8-b8af-4d0b-9a81-d2e0f5ac11d5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7dba15d3-a318-4e42-9e5a-a7c87d8af408
+          stepCounter: d9433584-194f-46d6-9fdd-592c10d5916c
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: ARCHIVED_REASON_ID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 29edde31-11ec-4965-a5df-76e26212a172
+                stepCounter: 8b8550e8-b8af-4d0b-9a81-d2e0f5ac11d5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ef050950-4805-4719-bf5a-d2030770a371
+          stepCounter: d9433584-194f-46d6-9fdd-592c10d5916c
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: CONTACT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 19d57e56-6dd5-4188-a94b-9e937f722bc6
+                stepCounter: 8b8550e8-b8af-4d0b-9a81-d2e0f5ac11d5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b7defa06-b156-403c-9f1c-b27546e9f1f8
+          stepCounter: d9433584-194f-46d6-9fdd-592c10d5916c
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: OWNER_ID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 8e58efbd-0a75-4f46-b0d9-c9943eace7e2
+                stepCounter: 8b8550e8-b8af-4d0b-9a81-d2e0f5ac11d5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4a376e1f-aafa-4615-ba0a-9b466a8aec85
+          stepCounter: d9433584-194f-46d6-9fdd-592c10d5916c
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: STAGE_ID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f73aa509-d2e4-4096-8c76-26c5e6507ec3
+                stepCounter: 8b8550e8-b8af-4d0b-9a81-d2e0f5ac11d5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: f036b4ce-435f-488a-b347-4fd31ff4621a
+          stepCounter: d9433584-194f-46d6-9fdd-592c10d5916c
+        config: {}
+        dataType: BOOLEAN
+        description: ""
+        name: IS_ANONYMIZED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 5cf1a932-d0ca-48d5-a88b-1c7580920002
+                stepCounter: 8b8550e8-b8af-4d0b-9a81-d2e0f5ac11d5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: a63770dc-b0d5-4b75-ac68-46eb7d1b13ed
+          stepCounter: d9433584-194f-46d6-9fdd-592c10d5916c
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: ORIGIN
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 9740b0be-4718-4d80-8c99-fd3598a8e7cd
+                stepCounter: 8b8550e8-b8af-4d0b-9a81-d2e0f5ac11d5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 553a97e6-0438-47c8-a0a4-aef40aa155df
+          stepCounter: d9433584-194f-46d6-9fdd-592c10d5916c
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: NAME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a0459e55-436a-4ea5-b8ab-ec8cf354dd6a
+                stepCounter: 8b8550e8-b8af-4d0b-9a81-d2e0f5ac11d5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 35163ea5-ea7b-42a5-b7e2-f410728de7a0
+          stepCounter: d9433584-194f-46d6-9fdd-592c10d5916c
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: LOCATION
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 07781bbe-d959-4d11-b1a9-4cae95af856a
+                stepCounter: 8b8550e8-b8af-4d0b-9a81-d2e0f5ac11d5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: a88c3bb1-5b65-47b1-bc4c-745b9aad739e
+          stepCounter: d9433584-194f-46d6-9fdd-592c10d5916c
+        config: {}
+        dataType: VARCHAR(512)
+        description: ""
+        name: HEADLINE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 485bafaf-5d97-42fd-bce1-506a81d29753
+                stepCounter: 8b8550e8-b8af-4d0b-9a81-d2e0f5ac11d5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9207a774-9406-4563-be5f-4455efbebfcb
+          stepCounter: d9433584-194f-46d6-9fdd-592c10d5916c
+        config: {}
+        dataType: BOOLEAN
+        description: ""
+        name: DATA_PROTECTION_STORE_ALLOWED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 8053a315-425b-4b22-8fd1-e9d0f7870650
+                stepCounter: 8b8550e8-b8af-4d0b-9a81-d2e0f5ac11d5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6ad4e594-7848-4cf8-a273-23705a184202
+          stepCounter: d9433584-194f-46d6-9fdd-592c10d5916c
+        config: {}
+        dataType: BOOLEAN
+        description: ""
+        name: DATA_PROTECTION_CONTACT_ALLOWED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 37073281-a79f-4d3b-9583-172104e35ede
+                stepCounter: 8b8550e8-b8af-4d0b-9a81-d2e0f5ac11d5
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases:
+          OPPORTUNITY: 8b8550e8-b8af-4d0b-9a81-d2e0f5ac11d5
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: LEVER_RAW
+            nodeName: OPPORTUNITY
+        join:
+          joinCondition: |-
+            FROM {{ ref('LEVER_RAW', 'OPPORTUNITY') }} "OPPORTUNITY"
+            WHERE "_FIVETRAN_DELETED" = FALSE
+        name: STG_OPPORTUNITY
+        noLinkRefs: []
+  name: STG_OPPORTUNITY
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node

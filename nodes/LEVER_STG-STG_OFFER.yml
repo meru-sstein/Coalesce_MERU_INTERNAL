@@ -1,0 +1,98 @@
+fileVersion: 1
+id: a0f5fb5c-b4dc-427c-b3c6-dbda108984df
+name: STG_OFFER
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: LEVER_STG
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: d81b3c12-703c-45a0-a318-009e8c16f983
+          stepCounter: a0f5fb5c-b4dc-427c-b3c6-dbda108984df
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: OPPORTUNITY_ID
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 96178851-31f7-4fb2-a74b-dd81b8bf901b
+                stepCounter: 6cbb41cb-53bb-454b-935e-0ce74c3af325
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9402bc05-392b-404a-b934-6727a3538b02
+          stepCounter: a0f5fb5c-b4dc-427c-b3c6-dbda108984df
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: ID
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 2f921f4a-c720-4ef8-b091-cd8543836381
+                stepCounter: 6cbb41cb-53bb-454b-935e-0ce74c3af325
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5dab33b0-655d-4011-86a7-f53b7d603b39
+          stepCounter: a0f5fb5c-b4dc-427c-b3c6-dbda108984df
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: CREATOR_ID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ce04db00-15fa-4daa-a7fe-ff06f943ea6d
+                stepCounter: 6cbb41cb-53bb-454b-935e-0ce74c3af325
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 160b4a93-aa26-42ce-9755-59cb126f4ef7
+          stepCounter: a0f5fb5c-b4dc-427c-b3c6-dbda108984df
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: STATUS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: e7d26a25-0960-4f53-a952-ca8e7fe04aa8
+                stepCounter: 6cbb41cb-53bb-454b-935e-0ce74c3af325
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases:
+          OFFER: 6cbb41cb-53bb-454b-935e-0ce74c3af325
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: LEVER_RAW
+            nodeName: OFFER
+        join:
+          joinCondition: |-
+            FROM {{ ref('LEVER_RAW', 'OFFER') }} "OFFER"
+            WHERE "_FIVETRAN_DELETED" = FALSE
+        name: STG_OFFER
+        noLinkRefs: []
+  name: STG_OFFER
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node

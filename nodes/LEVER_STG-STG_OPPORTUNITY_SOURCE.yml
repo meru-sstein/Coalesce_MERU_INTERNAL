@@ -1,0 +1,70 @@
+fileVersion: 1
+id: 8b7abb4d-e13c-4c87-9d8c-34d8f9bd4638
+name: STG_OPPORTUNITY_SOURCE
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: LEVER_STG
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: f92ba7aa-646b-4e41-ab5a-9a578b21cdf1
+          stepCounter: 8b7abb4d-e13c-4c87-9d8c-34d8f9bd4638
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: OPPORTUNITY_ID
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f0446780-5ffa-4bd4-95c5-4452e1e7d94f
+                stepCounter: b8e2ce32-33fe-42e3-8ce6-96def693eac4
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1d32a38f-198e-4299-8b91-0bdeb4fa6308
+          stepCounter: 8b7abb4d-e13c-4c87-9d8c-34d8f9bd4638
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: SOURCE
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: d999a90d-3cfa-4bc4-afd2-8f3b31afb8e0
+                stepCounter: b8e2ce32-33fe-42e3-8ce6-96def693eac4
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases:
+          OPPORTUNITY_SOURCE: b8e2ce32-33fe-42e3-8ce6-96def693eac4
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: LEVER_RAW
+            nodeName: OPPORTUNITY_SOURCE
+        join:
+          joinCondition: |-
+            FROM {{ ref('LEVER_RAW', 'OPPORTUNITY_SOURCE') }} "OPPORTUNITY_SOURCE"
+            WHERE "_FIVETRAN_DELETED"= FALSE
+        name: STG_OPPORTUNITY_SOURCE
+        noLinkRefs: []
+  name: STG_OPPORTUNITY_SOURCE
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node

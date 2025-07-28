@@ -1,0 +1,70 @@
+fileVersion: 1
+id: 80923be9-1429-470d-a208-09214155c00f
+name: STG_INTERVIEW_FEEDBACK
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: LEVER_STG
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: cdb762b0-193c-47d8-9712-7abb8f6e41a4
+          stepCounter: 80923be9-1429-470d-a208-09214155c00f
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: INTERVIEW_ID
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 69408eef-61d1-4069-8df0-869395f99297
+                stepCounter: 86bf6230-6dc2-4778-9717-7dcf9ab448af
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: fa10513e-0ca9-4522-9e01-01f43d140d40
+          stepCounter: 80923be9-1429-470d-a208-09214155c00f
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: FEEDBACK_FORM_ID
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 6dde350f-1a21-4544-a992-b262e7ce97b2
+                stepCounter: 86bf6230-6dc2-4778-9717-7dcf9ab448af
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases:
+          INTERVIEW_FEEDBACK: 86bf6230-6dc2-4778-9717-7dcf9ab448af
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: LEVER_RAW
+            nodeName: INTERVIEW_FEEDBACK
+        join:
+          joinCondition: |-
+            FROM {{ ref('LEVER_RAW', 'INTERVIEW_FEEDBACK') }} "INTERVIEW_FEEDBACK"
+            WHERE "_FIVETRAN_DELETED"= FALSE
+        name: STG_INTERVIEW_FEEDBACK
+        noLinkRefs: []
+  name: STG_INTERVIEW_FEEDBACK
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node

@@ -1,0 +1,168 @@
+fileVersion: 1
+id: 63a336b0-2e29-4cbc-b927-fd0444eb39f5
+name: FEEDBACK_FORM_TEMPLATE_FIELD
+operation:
+  database: ""
+  deployEnabled: true
+  description: ""
+  locationName: LEVER_RAW
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: d1263ffe-722e-4f76-8482-23caa99e125a
+          stepCounter: 63a336b0-2e29-4cbc-b927-fd0444eb39f5
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: FIELD_INDEX
+        nullable: false
+        primaryKey: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9d6defd5-921a-4d8c-a80d-ea46be424112
+          stepCounter: 63a336b0-2e29-4cbc-b927-fd0444eb39f5
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        name: ID
+        nullable: false
+        primaryKey: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 824db956-0b82-4172-aa0b-0655549a5bb0
+          stepCounter: 63a336b0-2e29-4cbc-b927-fd0444eb39f5
+        config: {}
+        dataType: BOOLEAN
+        defaultValue: ""
+        description: ""
+        name: _FIVETRAN_DELETED
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2d0e8c82-3cab-4ce7-8042-505717350aae
+          stepCounter: 63a336b0-2e29-4cbc-b927-fd0444eb39f5
+        config: {}
+        dataType: TIMESTAMP_TZ(9)
+        defaultValue: ""
+        description: ""
+        name: _FIVETRAN_SYNCED
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 986531a5-8014-47a4-990d-2f95fd0ca076
+          stepCounter: 63a336b0-2e29-4cbc-b927-fd0444eb39f5
+        config: {}
+        dataType: VARCHAR(1024)
+        defaultValue: ""
+        description: ""
+        name: DESCRIPTION
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: bfe8f42d-8376-4e93-ba84-3c7412fc5153
+          stepCounter: 63a336b0-2e29-4cbc-b927-fd0444eb39f5
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        name: TYPE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9f219e71-d963-4d17-91a5-589002bf724b
+          stepCounter: 63a336b0-2e29-4cbc-b927-fd0444eb39f5
+        config: {}
+        dataType: BOOLEAN
+        defaultValue: ""
+        description: ""
+        name: REQUIRED
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: d806e3f5-1b58-44df-8c6f-4d71e12e97c5
+          stepCounter: 63a336b0-2e29-4cbc-b927-fd0444eb39f5
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        name: TEXT
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+  name: FEEDBACK_FORM_TEMPLATE_FIELD
+  schema: ""
+  sqlType: Source
+  type: sourceInput
+  version: 1
+type: Node
